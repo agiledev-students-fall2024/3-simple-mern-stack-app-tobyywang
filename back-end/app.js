@@ -78,5 +78,14 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+// a route for "About Us"
+app.get('/about', async (req, res) => {
+  res.json({
+    title: "About Us",
+    paragraphs: ["My name is Toby. My favorite activity outside of school is playing sports with friends, most of the time golf and basketball. For golf, we often go outside of Manhattan to Queens or New Jersey by taking the LIRR or Ubers to play. It’s nice to leave the city once in a while and to travel a little bit with friends. I also like to play pickup basketball with friends and neighbors sometimes. Where I lived before, there was a basketball half-court that I would go every weekend over the summer to meet people and play. Now that I’ve moved, I haven’t played yet because I don’t have access to a court anymore, but I am definitely still open to playing.", "I grew up in Asia, also in a metropolitan area. Coming to NYC for college hasn’t been a culture shock at all due to the similarities of the cities. But something unique about NYC and going to school in NYC is the way it teaches you to be independent. Although I am still in college, and since I live off campus, it feels as if I have been years out of college. I enjoy the easy access to the city and how many different people you can meet here. During my high school, it was a very tight social circle, and everyone knew each other. This big change in the social scene is very exciting.", "While I currently really enjoy living in NYC, I have still yet to decide where I want to reside long term after graduation. Sometimes it is nice to have a break. I’ve noticed that since coming here for college, every time I go back to an Asian city, I start to notice things that I appreciate which I never did before."],
+    imageUrl: "https://github.com/agiledev-students-fall2024/3-simple-mern-stack-app-tobyywang/blob/master/IMG_2452.jpg?raw=true"
+  })
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!

@@ -1,0 +1,22 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.paragraphs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-paragraph {
+    flex: 1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.about-image {
+    height: auto;
+    width: 200px;
+    margin-top: 20px;
+}
